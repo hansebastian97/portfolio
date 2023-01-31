@@ -41,7 +41,7 @@ The payment table records payment made by a customer after they rented a movie. 
 
 The project process flow explained as follows:
 
-![Project Flowchart](.\images/Kafka-Sakila-DataStream.jpg)
+![Project Flowchart](./images/Kafka-Sakila-DataStream.jpg)
 
 1. Generate dummy data that we're going to ingest to Rental table using Python script, and produce the dummy data to Kafka Topics (Rental)
 2. Get the data from Kafka Topics (Rental) and ingest the data into Rental table using **Kafka JDBC Sink Connector**.
