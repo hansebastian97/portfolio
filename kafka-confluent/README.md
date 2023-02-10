@@ -4,7 +4,7 @@ Simple personal project that use [Apache Kafka](https://kafka.apache.org/) and s
 ## Project Overview
 This project is a data-stream simulation. The main objectives is to generate dummy data and stream the data into MySQL database using Apache Kafka. The database used for this project is [Sakila Database](https://dev.mysql.com/doc/sakila/en/) and the tables are:
 <details><summary><b>Rental</b></summary>
-The rental table records informations about rented movies such as what movie was rented, who rented the movie, when it was rented, and when it was/will returned. Here is the table description:
+The rental table records informations about rented movies such as what movie was rented, who rented the movie, when it was rented, and when it was/will be returned. Here is the table description:
 
 ``` SQL
 +--------------+--------------------+------+-----+-------------------+-----------------------------------------------+
@@ -65,7 +65,7 @@ The project process flow explained as follows:
 
 * [Python](https://www.python.org/)
 
-    We use Python for generating dummy messages, produce the dummy data to Kafka Topics, and consume the dummy data from kafka Topics.
+    We use Python to generate dummy messages, produce the dummy data to Kafka Topics, and consume the dummy data from kafka Topics.
 
 ## Files, Folders Description
     .
@@ -84,8 +84,8 @@ The project process flow explained as follows:
     └───requirements.txt                     # Python library requirements
 
 ## How To Use
-1. Run **docker-compose.yml**
-2. Open **Confluent** (localhost:9021), export **mysqlsink.properties** and **mysqlsource.properties** to **Kafka Connect**
+1. Start **Docker** and run **docker-compose.yml**
+2. Open **Confluent** (localhost:9021), import **mysqlsink.properties** and **mysqlsource.properties** to **Kafka Connect**
 3. Run **rental.py**
 4. Run **payment.py**
 
