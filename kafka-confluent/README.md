@@ -85,7 +85,7 @@ The project process flow explained as follows:
 
 ## How To Use
 1. Start **Docker** and run **docker-compose.yml**
-2. Open **Confluent** (localhost:9021), import **mysqlsink.properties** and **mysqlsource.properties** to **Kafka Connect**
+2. Open **Confluent** (localhost:9021) in your browser, import **mysqlsink.properties** and **mysqlsource.properties** to **Confluent** > **Kafka Connect**
 3. Run **rental.py**
 4. Run **payment.py**
 
